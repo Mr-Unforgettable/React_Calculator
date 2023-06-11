@@ -1,13 +1,113 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 110%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082);
+}
+
+.calculator-title {
+  font-size: 30px;
+  background: #22252d;
+  width: 300px;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+  color: #ffa500;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.mainCalc {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background: #22252d;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Add margin-bottom to create a gap */
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  margin-top: 15px;
+}
+
+.button-container input[type="button"] {
+  width: 100%;
+}
+
+.button-container input[type="button"][value="="] {
+  grid-column: span 2;
+}
+
+.screen-row input {
+  width: 100%;
+  height: 80px;
+  background: #000000;
+  border: none;
+  border-radius: 0px;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #ffffff;
+  text-align: right;
+}
+
+input[type="button"] {
+  width: 60px;
+  height: 52px;
+  background: rgb(117, 141, 158);
+  border: 1px solid #000000;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="button"]:active {
+  background: #ccc;
+}
+
+/* Add specific styles for different button labels */
+input[type="button"][value="AC"] {
+  background: #ff0000; /* Red for AC button */
+}
+
+input[type="button"][value="C"] {
+  background: #c34115; /* Orange for C button */
+}
+
+input[type="button"][value="+"],
+input[type="button"][value="-"],
+input[type="button"][value="*"],
+input[type="button"][value="/"] {
+  background: rgb(74, 164, 35); /* Green for operator buttons */
+}
+
+input[type="button"][value="."] {
+  background: #ff0; /* Blue for dot button */
+}
+
+input[type="button"][value="="] {
+    background: turquoise;
 }
