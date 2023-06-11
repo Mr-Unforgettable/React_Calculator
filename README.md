@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 Project looks like:
-
+![Calculator_react](https://github.com/Mr-Unforgettable/calculator_react/assets/48011922/92e80c34-2270-4c6a-aefd-fcf7aa0d7abc)
 
 ### `npm start`
 
