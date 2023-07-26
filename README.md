@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![Calculator_react](https://github.com/Mr-Unforgettable/calculator_react/assets/48011922/92e80c34-2270-4c6a-aefd-fcf7aa0d7abc)
 
+## Features
+
+1. Basic arithmetic operations like: 'Addition', 'Subtraction', 'Multiplication' and 'Division'.
+2. Floating point operations.
+
 ## Available Scripts
 
 In the project directory, you can run:
