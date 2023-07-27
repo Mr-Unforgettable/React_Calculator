@@ -94,7 +94,7 @@ input[type="button"][value="AC"] {
 }
 
 input[type="button"][value="C"] {
-  background: #c34115; /* Orange for C button */
+  background: #ff4000; /* Orange for C button */
 }
 
 input[type="button"][value="+"],
